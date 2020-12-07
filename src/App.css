@@ -1,0 +1,341 @@
+.App {
+  /*text-align: center;*/
+  height: 100%;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+header {
+  background: black;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  z-index: 200;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100; /* this is optional and should be different for every project */
+}
+
+.footer {
+  background: black;
+  text-align: left;
+  padding-bottom: 0;
+  border-top: white 1px inset;
+}
+
+.logo-text-display {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 9px;
+}
+
+.logo-image {
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 15px 24px 15px 15px;
+}
+
+.logo {
+  display: block;
+}
+
+.bg-main{
+  background: black;
+}
+.bg-sub{
+  background: #0F0F0F;
+}
+.bg-text-main{
+  background: white;
+}
+.bg-text-sub{
+  background: #EFEFEF;
+
+}
+.bg-accent{
+  background: #440BD4;
+}
+
+.bg-models{
+  background-image: url(images/bgModels.png);
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: 100% 100%;
+}
+
+.bg-loading{
+  background-image: url(images/bgLoading.png);
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+  background-size: 100% 100%;
+}
+
+.text-header{
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: bold;
+}
+.text-sub-header{
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: bold;
+}
+.text-main{
+  font-family: Roboto;
+  font-size: 28px;
+}
+.text-main-bold{
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: bold;
+}
+.text-logo{
+  font-size:58px;
+  font-family: Chonburi;
+}
+.text-small{
+  font-family: Roboto;
+  font-size: 20px;
+}
+.text-small-bold{
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+}
+.text-table-bold{
+  font-family: HelveticaNeueCyr;
+  font-size: 20px;
+  font-weight: bold;
+}
+.text-table-regular{
+  font-family: HelveticaNeueCyr;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.text-color-accent{
+  color: #440BD4;
+}
+.text-color-main{
+  color: white;
+}
+.text-color-sub{
+  color: #EFEFEF !important;
+}
+
+.image-button{
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+  margin: 15px 15px 15px 15px;
+}
+
+.upload-button{
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+}
+
+.upload-button-wrapper{
+  padding: 0 0 0 0 !important;
+  background: none !important;
+  border: none !important;
+  /*margin-top: 10vh;*/
+}
+
+.upload-button-wrapper:active{
+  box-shadow: none !important;
+}
+.upload-button-wrapper:focus{
+  box-shadow: none !important;
+}
+
+.footer-text{
+  padding-left: 24px;
+}
+
+.align-right{
+ text-align: right;
+}
+
+.align-vert-middle{
+  vertical-align: middle;
+}
+
+.navbar-brand{
+  width: 100%;
+}
+.btn-flat {
+  background-color: #440BD4 !important;
+  color: white !important;
+  border: 2px inset #440BD4 !important;
+}
+
+.btn {
+  transition-duration: 0.1s !important;
+}
+
+.btn-flat:hover {
+  background-color: black !important; /* Green */
+  color: #440BD4 !important;
+}
+
+.home-block-mine{
+  /*height: 80vh;*/
+}
+
+.home-block-image-mine{
+  width: 49.3vh;
+  /*height: 65vh;*/
+  position: relative;
+  right: 50%;
+  z-index: 100;
+  /*bottom: 30%;*/
+}
+
+.home-block-image-dna{
+  width: 90%;
+  height: 100%;
+  position: relative;
+  left: 30%;
+  z-index: 100;
+  /*bottom: 30%;*/
+}
+
+.block-border{
+  border: black 2px inset;
+}
+
+.plot-image{
+  width: 75%;
+}
+
+.center-align{
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-padding{
+  padding-top: 24px;
+  padding-bottom: 70px;
+}
+
+.data-button{
+  display: table-cell;
+  text-align: center;
+  width: 250px;
+  height: 180px;
+  border: 4px white inset;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+.data-button:hover {
+  color: #440BD4 !important;
+  border: #440BD4 !important;
+}
+
+.link-without-underline{
+  text-decoration: none !important;
+}
+
+.image-button-small{
+  width: 44px;
+  height: 44px;
+  vertical-align: middle;
+  margin: 15px 15px 15px 15px;
+}
+
+.container-padding-top{
+  padding-top: 24px;
+}
+.container-padding-bottom{
+  padding-bottom: 24px;
+}
+
+.loading-model-bar-wrapper{
+  width: 75%;
+  height: 95%;
+  border: #EFEFEF 1px inset;
+}
+
+.loading-model-bar{
+  text-align: center;
+  display: table !important;
+  vertical-align: middle;
+  margin-left: 30px;
+  margin-top:30%;
+  margin-right: 30px;
+}
+
+.progress-bar{
+  background-color: #440BD4 !important;
+}
+
+.home-block-wrapper{
+  display: inline-block !important;
+}
+
+.loading-page-bar{
+  display: block;
+  margin: 30vh auto;
+  height: 10vh;
+}
+
+
+.home-block-image-team{
+  height: 160px;
+  clip-path: circle(80px at center);
+
+  position: relative;
+  right: 40%;
+  z-index: 100;
+
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+}
+
+/*.border-on-image{*/
+/*  border: #0F0F0F 4px inset;*/
+/*}*/

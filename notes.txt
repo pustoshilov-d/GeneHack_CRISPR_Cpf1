@@ -1,0 +1,2 @@
+            id: this.props.match.params.id,
+             window.location.pathname

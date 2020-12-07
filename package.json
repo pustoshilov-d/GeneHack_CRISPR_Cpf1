@@ -1,0 +1,66 @@
+{
+  "name": "gene-hack",
+  "version": "0.3.2",
+  "private": true,
+  "dependencies": {
+    "@google-cloud/debug-agent": "^5.0.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.5.0",
+    "fibers": "^5.0.0",
+    "inspector": "^0.5.0",
+    "jquery": "^3.5.1",
+    "node-gyp": "^7.0.0",
+    "node-sass": "^4.14.1",
+    "node-scrypt": "0.0.1",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-sticky": "^6.0.3",
+    "react-transition-group": "^4.4.1",
+    "sass": "^1.26.7",
+    "seqviz": "^3.0.26",
+    "serve": "^11.3.2",
+    "typescript": "^3.9.3",
+    "xlsx": "^0.16.9"
+  },
+  "scripts": {
+    "start": "serve -s build -l 8080",
+    "start-dev": "react-scripts start",
+    "build": "npm audit fix && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "gcp-build": "npm run build",
+    "deploy": "gcloud app deploy app.yaml --version=0-3-1",
+    "git-push": "git add . && git commit -m \"push commit\" && git push git master"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": "12.x",
+    "npm": "6.x"
+  },
+  "devDependencies": {
+    "history": "^5.0.0",
+    "react-excel-renderer": "^1.1.0"
+  }
+}
